@@ -1,5 +1,5 @@
-tensorflow
-opencv-python
-scikit-learn
-scikit-image 
+tensorflow>=2.5.1
+opencv-python>=4.5.1.*
+scikit-learn>=0.23.0
+scikit-image
 numpy
