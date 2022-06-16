@@ -59,3 +59,4 @@ The following command would perform a face recognition based on the faces regist
 ```bash
 $ bash run.sh camera
 ```
+![sample](https://user-images.githubusercontent.com/82140392/163969654-e555e41f-aa25-42d6-9c9e-c1fc5bc79a09.gif)
