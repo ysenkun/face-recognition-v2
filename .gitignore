@@ -1,0 +1,7 @@
+src/facenet_model/*
+
+src/mask_detect/mask_detector.model
+
+src/register.db
+
+src/data/images/*
