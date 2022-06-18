@@ -1,12 +1,5 @@
-import sys
-import pprint
-from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
-from tensorflow.keras.preprocessing.image import img_to_array
 import numpy as np
-import argparse
 import cv2
-import os
-import time
 
 def mask_image(img,model):
     prototxtPath = "./src/mask_detect/face_detector/deploy.prototxt"
