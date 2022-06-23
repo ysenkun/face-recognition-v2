@@ -33,7 +33,7 @@ Download the vggface2 model and rename the folder to vggface2
 $ unzip ~/Downloads/20180402-114759.zip
 ```
 ```bash
-$ mv 20180402-114759 /facenet_model/vggface2
+$ mv 20180402-114759 facenet_model/vggface2
 ```
 
 ### Pre-trained Models (For face detection)
