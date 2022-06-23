@@ -39,7 +39,7 @@ $ mv 20180402-114759 facenet_model/vggface2
 ### Pre-trained Models (For face detection)
 After downloading [mask_detector.model](https://drive.google.com/file/d/1DdaF3eRnlbv2ssvsJhHqlGQTnlhqK2wi/view?usp=sharing), save it in the following directory
 ```bash
-$ mv ~/Downloads/mask_detector.model /src/mask_detect
+$ mv ~/Downloads/mask_detector.model src/mask_detect
 ```
 ### :raising_hand: Reference:
 1. https://github.com/chandrikadeb7/Face-Mask-Detection
