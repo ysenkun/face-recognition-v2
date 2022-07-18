@@ -3,7 +3,7 @@ model='./src/facenet_model/vggface2/20180402-114759.pb'
 
 #Update DB
 if [[ ${1} = 'create' ]]; then
-	rm ./register.db
+	rm ./src/register.db
 fi
 
 #run
