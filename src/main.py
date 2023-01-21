@@ -106,7 +106,7 @@ class create_db():
         print("That's a wrap \n Creates a DB")
         return frames, names
 
-    def visualization(sess, images_placeholder, embeddings, phase_train_placeholder):
+    def visualization(sefl, sess, images_placeholder, embeddings, phase_train_placeholder):
         # Run forward pass to calculate embeddings
         feed_dict = { images_placeholder: images, phase_train_placeholder:False }
         emb = sess.run(embeddings, feed_dict=feed_dict)        
@@ -116,7 +116,7 @@ class create_db():
             name = names[i]
             print(name)
             data = list(emb[i,:])
-            create_db.insert_db(name, data)
+            self.insert_db(name, data)
 
         print('Distance matrix')
         print('    ', end='')
@@ -163,7 +163,7 @@ class recognition():
             for num,images in enumerate(images_list):
                 feed_dict = { images_placeholder: images, phase_train_placeholder:False }
                 emb = sess.run(embeddings, feed_dict=feed_dict)
-                name_detect = recognition.face_detect(emb)
+                name_detect = self.face_detect(emb)
                 # cv2.FONT_HERSHEY_PLAIN
                 cv2.putText(frame,name_detect,(int(box_list[num][0]+30), int(box_list[num][1])-30),
                             cv2.FONT_HERSHEY_TRIPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
